@@ -1,0 +1,33 @@
+{
+    "Token":"MTAwMTYwNDczNDA1NjE0MDgzMA.GyM25n.Ta9CUozPw5R9ite3D1krws574hPBc900XW3nj8",
+    "Mongo":"mongodb+srv://wio1924:wio1924@cluster0.spvkcjf.mongodb.net/?retryWrites=true&w=majority",
+    "BotSes":"1001601847322214472",
+    "BotDurum":"Created By Relly.",
+    "BotPrefix":["."],
+    "BotId":"1001604734056140830",
+    "BotOwner":["837686195877838889"],
+
+    "guildID":"1000718264319614998",
+    "enaltyt":"1001601780435648574",
+
+    "red":"<a:relly_red:1001610006606647453>",
+    "green":"<a:relly_yes:1001610015754424362>",
+    "relly_voice":"<:relly_voice:1001610001158262904>",
+    "relly_chat":"<a:relly_chat:1001609999702839479>",
+    "relly_arama":"<:relly_arama:1001610017528631397>",
+    "relly_yildiz":"<a:relly_deynek:945744643730079876>",
+
+    "yes":"1001610015754424362",
+    "no":"1001610006606647453",
+
+
+    "isimtag":"",
+    "taglar": [""],
+    "defaultName":"• İsim Yaş",
+
+    "dmMessages": true,
+    "banlimit": 3,
+    "jaillimit": 3,
+    "chatmutelimit": 3,
+    "voicemutelimit": 3
+}
