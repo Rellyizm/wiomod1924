@@ -381,15 +381,15 @@ client.on("userUpdate", async function(oldUser, newUser) {
   const inviteMember = require("../Inv/models/invite")
   const Inviter = require("../Inv/models/invite");
   const messageUserChannel = require("./Models/messageUserChannel");
- // const voiceUserChannel = require("../Stat/src/schemas/voiceUserChannel");
- //const voiceUserParent = require("../Stat/src/schemas/voiceUserParent");
+ const voiceUserChannel = require("../Stat/src/schemas/voiceUserChannel");
+ const voiceUserParent = require("../Stat/src/schemas/voiceUserParent");
 
-  //const messageGuild = require("../Stat/src/schemas/messageGuild");
-  //const messageGuildChannel = require("../Stat/src/schemas/messageGuildChannel");
-  //const voiceGuild = require("../Stat/src/schemas/voiceGuild");
- // const voiceGuildChannel = require("../Stat/src/schemas/voiceGuildChannel");
- // const messageUser = require("../Stat/src/schemas/messageUser");
-//const voiceUser = require("../Stat/src/schemas/voiceUser");
+  const messageGuild = require("../Stat/src/schemas/messageGuild");
+  const messageGuildChannel = require("../Stat/src/schemas/messageGuildChannel");
+  const voiceGuild = require("../Stat/src/schemas/voiceGuild");
+ const voiceGuildChannel = require("../Stat/src/schemas/voiceGuildChannel");
+ const messageUser = require("../Stat/src/schemas/messageUser");
+const voiceUser = require("../Stat/src/schemas/voiceUser");
   client.on("interactionCreate", async (button) => {
     if (!button.isButton()) return;
     if (button.customId === "katilma") {
