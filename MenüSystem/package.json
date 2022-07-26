@@ -1,0 +1,32 @@
+{
+  "name": "relly-menu-altyapi",
+  "version": "1.0.0",
+  "description": "relly menü altyapısıdır.",
+  "main": "relly.js",
+  "scripts": {
+    "test": "node relly.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWTCHR/dcjs-menu-altyapi.git"
+  },
+  "keywords": [
+    "rellyaltyapi",
+    "menualtyapi",
+    "rellymenu",
+    "relly",
+    "menüsistemi",
+    "lamina",
+    "menusystem",
+    "serendia"
+  ],
+  "author": "relly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheWTCHR/dcjs-menu-altyapi/issues"
+  },
+  "homepage": "https://github.com/TheWTCHR/dcjs-menu-altyapi#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
