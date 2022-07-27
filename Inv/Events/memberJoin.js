@@ -8,7 +8,7 @@ const inviteSchema = require('../models/invite');
  */
 module.exports = async (member, inviter, invite) => {
     let isMemberFake = (Date.now() - member.user.createdTimestamp) < 7 * 24 * 60 * 60 * 1000;
-    let inviteChannel = client.channels.cache.get(sunucuayar.INVITEChannel);
+    let inviteChannel = client.channels.cache.get("1001601851713659061");
     let inviterData = await inviteSchema.findOne({ guildID: member.guild.id, userID: inviter.user.id });
     if (inviterData) {
         if (isMemberFake) {
