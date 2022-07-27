@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args, embed) => {
     let server = await serverSettings.findOne({
         guildID: message.guild.id
     });
-    if(!sunucu.SHIPKANAL.some(kanal => message.channel.id.includes(kanal))) return message.reply(`**UYARI:** Bu komutu yalnızca <#${sunucu.SHIPKANAL[0]}> kanalında kullanabilirsin!`)
+    if(!server.SHIPKANAL.some(kanal => message.channel.id.includes(kanal))) return message.reply(`**UYARI:** Bu komutu yalnızca <#${sunucu.SHIPKANAL[0]}> kanalında kullanabilirsin!`)
     const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member
     const sayı = Math.floor(Math.random() * 100);
     
