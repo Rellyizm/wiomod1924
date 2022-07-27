@@ -125,8 +125,8 @@ let modData = await modsData.findOne({guildID: channel.guild.id})
          
         let fixTag = `${ayarlar.taglar.some(s => member.user.username.includes(s) || member.user.discriminator.includes(s) || member.user.tag.includes(s)) ? ayarlar.isimtag : ayarlar.defaultName}`
         var name;
-        if (yaş) name = `${isim} | ${yaş}`
-        if (!yaş) name = `${isim}`
+        if (yaş) name = `${fixTag} ${isim} | ${yaş}`
+        if (!yaş) name = `${fixTag} ${isim}`
         if(!isim && !yaş) name = `${member.user.username.replaceAll(ayarlar.taglar[0],"").replaceAll(ayarlar.taglar[1], '').replaceAll(ayarlar.taglar[2], '').replaceAll(ayarlar.taglar[3], '').replaceAll(ayarlar.taglar[4], '').replaceAll(ayarlar.taglar[5], '').replaceAll(ayarlar.taglar[6], '')}`
         return name;
     }
