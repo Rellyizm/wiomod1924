@@ -108,7 +108,7 @@ client.on("message", async  message => {
       
     } else {
           member.roles.add(data.UNREGISTER).catch(e => {});
-               member.setNickname(data.DEFAULTNAME).catch(e => {});
+               member.setNickname(ayarlar.defaultName).catch(e => {});
       
              client.channels.cache.get(data.REGISTER).send(`
 🎉 ${member} Sunucumuza hoş geldin. 
