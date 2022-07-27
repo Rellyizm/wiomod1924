@@ -242,7 +242,7 @@ Eylem Gerçekleşme: ${moment(newState.createdAt).locale("tr").format('LLL')}\`\
 Girdiği kanalda bulunan üyeler:
 ${newState.channel.members.map(x => `${x.user} - \`${x.user.id}\``).join("\n")}
     `)   
-    client.channels.cache.get(voicelog).send({ 
+    client.channels.cache.get(data.VOICELOG).send({ 
       embeds: [SesMicEmbed]
       })
   } 
@@ -288,7 +288,7 @@ ${makro}
 Yeni Kanalında Bulunan Üyeler:        
 ${newState.channel.members.map(x => `${x.user} - \`${x.user.id}\``).join("\n")}
 `)   
-client.channels.cache.get(voicelog).send({ 
+client.channels.cache.get(data.VOICELOG).send({ 
               embeds: [SesMicEmbed1]
               })
   }}
