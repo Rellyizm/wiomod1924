@@ -3,13 +3,11 @@ const { stripIndents } = require("common-tags");
 const Schema = require("./_model.js");
 const Modals = require("discord-modals");
 const mongoose = require("mongoose");
-const ayar = require("../Ayarlar.json")
-const sunucuayar = require("../Executive/Models/sunucuayar")
 
 class Bot extends Client {
     constructor(options = {}) {
         super({
-            presence: { activities: [{ name: "", type: "WATCHING" }] },
+            presence: { activities: [{ name: "Created by Relly.", type: "WATCHING" }] },
             partials: [
                 ...Object.keys(Constants.PartialTypes)
             ],
@@ -20,6 +18,8 @@ class Bot extends Client {
         });
 
         this.config = {
+            TOKEN: "OTkyMzE4NTYxNzE0NDM4MjA0.GOBoOy.VQLjfaRmscynKaFWdwPCBmH2qJS_8DgKcttzAA",
+            MONGO: "mongodb+srv://wio1924:wio1924@cluster0.spvkcjf.mongodb.net/?retryWrites=true&w=majority",
             CATEGORY: "1001601831069286401",
             LOG: "1001609068089180313"
         }
@@ -32,11 +32,12 @@ class Bot extends Client {
     }
 
     async init () {
-        mongoose.connect(ayar.Mongo, { useNewUrlParser: true, useUnifiedTopology: true })
+        mongoose.connect(this.config.MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(() => {
-            this.login(ayar.Token).then(async () => {
-                console.log("=> Secret System Hazır Halde ✔")
+            this.login(this.config.TOKEN).then(async () => {
+                console.log("Discord Bağlantısı Kuruldu ✔")
             })
+            console.log("Mongo Bağlantısı Kuruldu ✔")
         });
     }
 }
