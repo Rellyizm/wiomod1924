@@ -20,8 +20,8 @@ class Bot extends Client {
         });
 
         this.config = {
-            CATEGORY: sunucuayar.OZELODALOG,
-            LOG: sunucuayar.OZELODAPARENTS
+            CATEGORY: "1001601831069286401",
+            LOG: "1001609068089180313"
         }
     }
 
