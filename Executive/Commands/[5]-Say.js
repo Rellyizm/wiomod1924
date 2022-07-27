@@ -21,7 +21,7 @@ if (!BanYetkili.some(x => message.member.roles.cache.has(x)) && !message.member.
     ❯ Şuan da toplam **${ses}** kişi ses kanallarında aktif.
     ❯ Sunucu da şuan da toplam **${top}** üye var (**${online}** Aktif).
     ❯ Toplam **${tagges}** kişi tagımızı alarak bize destek oluyor. 
-    ❯ Sunucumuz şuan da  **${boostlevel}** seviye ve **${boost}** boost basılmış.`)]}) 
+    ❯ Sunucumuz şuan da  **3** seviye ve **${boost}** boost basılmış.`)]}) 
 
 }
     exports.config = {
