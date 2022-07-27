@@ -60,31 +60,31 @@ const sunucuayar = require("./Models/sunucuayar");
 client.on("message", async message => {
   const data = await sunucuayar.findOne({ guildID: ayarlar.guildID })
   if(message.content.toLowerCase() == "tagges") 
-  return message.channel.send((`\`${data.TAG}\``))
+  return message.channel.send((`\`\`\`${data.TAG}\`\`\``))
 });
 
 client.on("message", async message => {
   const data = await sunucuayar.findOne({ guildID: ayarlar.guildID })
 if(message.content.toLowerCase() == ".tag") 
-  return message.channel.send((`\`${data.TAG}\``))
+  return message.channel.send((`\`\`\`${data.TAG}\`\`\``))
 });
 
 client.on("message", async message => {
   const data = await sunucuayar.findOne({ guildID: ayarlar.guildID })
   if(message.content.toLowerCase() == "tag") 
-  return message.channel.send((`\`${data.TAG}\``))
+  return message.channel.send((`\`\`\`${data.TAG}\`\`\``))
 });
 
 client.on("message", async message => {
   const data = await sunucuayar.findOne({ guildID: ayarlar.guildID })
   if(message.content.toLowerCase() == "!tag") 
-  return message.channel.send((`\`${data.TAG}\``))
+  return message.channel.send((`\`\`\`${data.TAG}\`\`\``))
 });
 
 client.on("message", async  message => {
   const data = await sunucuayar.findOne({ guildID: ayarlar.guildID })
   if(message.content.toLowerCase() == "u-tag") 
-  return message.channel.send((`\`${data.TAG}\``))
+  return message.channel.send((`\`\`\`${data.TAG}\`\`\``))
 });
 
 
