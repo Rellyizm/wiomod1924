@@ -14,12 +14,14 @@ if (!BanYetkili.some(x => message.member.roles.cache.has(x)) && !message.member.
     let tagges = message.guild.members.cache.filter(s => data.TAG.some(a => s.user.tag.toLowerCase().includes(a))).size
     let ses = message.guild.members.cache.filter(s => s.voice.channel).size
     let boost = message.guild.premiumSubscriptionCount;
-    let boostlevel = message.guild.premiumTier;
+    let boostlevel = message.guild.premiumTier == "NONE" ? 0 : message.guild.premiumTier;
+    let online = message.guild.members.cache.filter(s => s.presence?.status != "offline").size
 
     message.channel.send({embeds: [embed.setDescription(`
-    \`>\` Sunucuda toplam **${top}** adet üye var.
-    \`>\` Toplamda **${tagges}** kişi tagımızı alarak bizi desteklemiş.
-    \`>\` Şu anda toplam **${ses}** kişi seslide.`)]}) 
+    ❯ Şuan da toplam **${ses}** kişi ses kanallarında aktif.
+    ❯ Sunucu da şuan da toplam **${top}** üye var (**${online}** Aktif).
+    ❯ Toplam **${tagges}** kişi tagımızı alarak bize destek oluyor. 
+    ❯ Sunucumuz şuan da  **${boostlevel}** seviye ve **${boost}** boost basılmış.`)]}) 
 
 }
     exports.config = {
