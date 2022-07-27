@@ -37,7 +37,7 @@ args = args.filter(a => a !== "" && a !== " ").splice(1)
  
    let data1 = await modsData.findOne({guildID: message.guild.id});
    if(data1.tagMode == true) {
-       if(Tag.some(x => member.user.username.includes(x) || member.user.discriminator.includes(x)  || member.roles.cache.has(Vip) || member.roles.cache.has(BoosterRole))) {
+       if(Tag.some(x => member.user.username.includes(x) || member.user.discriminator.includes(x)  || member.roles.cache.has(Vip) || member.roles.cache.has(Booster))) {
         await Register.Woman(member, message.member, name, message.channel)
 
        }  else {
