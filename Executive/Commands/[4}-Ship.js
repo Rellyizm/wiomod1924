@@ -7,7 +7,6 @@ module.exports.run = async (client, message, args, embed) => {
     let server = await serverSettings.findOne({
         guildID: message.guild.id
     });
-   if(message.channel.id !== "1001613592027746375") return message.reply(`**UYARI:** Bu komutu yalnızca <#1001613592027746375> kanalında kullanabilirsin!`)
 
     const sayı = Math.floor(Math.random() * 100);
     
