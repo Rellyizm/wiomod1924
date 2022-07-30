@@ -311,7 +311,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
       if (newUser.username !== oldUser.username) {
     if (oldUser.username.includes(tag) && !newUser.username.includes(tag)) {
 
-      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tag}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tag}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
        } else if (!oldUser.username.includes(tag) && newUser.username.includes(tag)) {
         member.roles.add(data.CREW)
             client.channels.cache.get(data.CHAT).send(`Tebrikler, ${newUser} tag alarak ailemize katıldı ona sıcak bir **'Merhaba!'** diyin.(${tag})\nYeni ismine tagımız çok yakıştı **${newUser.tag}**`).sil(7)
@@ -319,7 +319,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
     }
     if (oldUser.username.includes(tagg) && !newUser.username.includes(tagg)) {
 
-    client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tagg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+    client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tagg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
     } else if (!oldUser.username.includes(tagg) && newUser.username.includes(tagg)) {
         member.roles.add(data.CREW)
             client.channels.cache.get(data.CHAT).send(`Tebrikler, ${newUser} tag alarak ailemize katıldı ona sıcak bir **'Merhaba!'** diyin.(${tagg})\nYeni ismine tagımız çok yakıştı **${newUser.tag}**`).sil(7)
@@ -327,7 +327,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
     }
     if (oldUser.username.includes(taggg) && !newUser.username.includes(taggg)) {
 
-      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${taggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${taggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
     } else if (!oldUser.username.includes(taggg) && newUser.username.includes(taggg)) {
         member.roles.add(data.CREW)
             client.channels.cache.get(data.CHAT).send(`Tebrikler, ${newUser} tag alarak ailemize katıldı ona sıcak bir **'Merhaba!'** diyin.(${taggg})\nYeni ismine tagımız çok yakıştı **${newUser.tag}**`).sil(7)
@@ -335,7 +335,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
     }
     if (oldUser.username.includes(tagggg) && !newUser.username.includes(tagggg)) {
 
-      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tagggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${tagggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
     } else if (!oldUser.username.includes(tagggg) && newUser.username.includes(tagggg)) {
         member.roles.add(data.CREW)
             client.channels.cache.get(data.CHAT).send(`Tebrikler, ${newUser} tag alarak ailemize katıldı ona sıcak bir **'Merhaba!'** diyin.(${tagggg})\nYeni ismine tagımız çok yakıştı **${newUser.tag}**`).sil(7)
@@ -343,7 +343,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
     }
      if (oldUser.username.includes(taggggg) && !newUser.username.includes(taggggg)) {
 
-      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${taggggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+      client.channels.cache.get(data.TAGLOG).send(` ${newUser} isminden \`${taggggg}\` çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
     } else if (!oldUser.username.includes(taggggg) && newUser.username.includes(taggggg)) {
         member.roles.add(data.CREW)
             client.channels.cache.get(data.CHAT).send(`Tebrikler, ${newUser} tag alarak ailemize katıldı ona sıcak bir **'Merhaba!'** diyin.(${taggggg})\nYeni ismine tagımız çok yakıştı **${newUser.tag}**`).sil(7)
@@ -353,7 +353,7 @@ client.on("userUpdate", async function(oldUser, newUser) {
    if (newUser.discriminator !== oldUser.discriminator) {
         if (oldUser.discriminator == "1924" && newUser.discriminator !== "1924") {
     
-            client.channels.cache.get(data.TAGLOG).send(` ${newUser} etiketinden **1924** çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** `)
+            client.channels.cache.get(data.TAGLOG).send(` ${newUser} etiketinden **1924** çıkartarak ailemizden ayrıldı! \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}** <@&1001944006143508490>`)
         } else if (oldUser.discriminator !== "1924" && newUser.discriminator == "1924") {
             member.roles.add(data.CREW)
             client.channels.cache.get(data.TAGLOG).send({embeds: [embed.setDescription(`  ${newUser} etiketine **1924** alarak ailemize katıldı. \n\nÖnceki İsmi: **${oldUser.tag}**\nYeni İsmi: **${newUser.tag}**`)] })
