@@ -13,13 +13,7 @@ const coin = require("../Models/coin");
 const inviteSchema = require('../../Inv/models/invite');
 const statData = require('../Models/Stats')
 module.exports.run = async (client, message, args) => {
-    let data = await sunucuVeri.findOne({
-        guildID: message.guild.id
-    });
-    let BotOwner = data.BOTOWNER;
-    let BanYetkili = data.BanYetkiliRol;
 
-if (!BanYetkili.some(x => message.member.roles.cache.has(x)) && !message.member.roles.cache.has(BotOwner)) return 
         const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
         const row = new Discord.MessageActionRow()
         .addComponents(
