@@ -37,7 +37,6 @@ module.exports.run = async (client, message, args) => {
         const collector = msg.createMessageComponentCollector({ filter, time: 30000 })
         collector.on('collect', async (button) => {
             if (button.customId === "topsesmesaj") {
-                row.components[0].setDisabled(true)
                 row.components[0].setDisabled(true);
                 msg.edit({ components: [row] }); 
         
